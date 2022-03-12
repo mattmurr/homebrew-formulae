@@ -5,9 +5,9 @@ class Jdtls < Formula
   desc 'The Eclipse JDT Language Server is a Java language specific implementation of the Language Server Protocol'
   homepage 'https://github.com/eclipse/eclipse.jdt.ls'
 
-  url 'https://download.eclipse.org/jdtls/milestones/1.7.0/jdt-language-server-1.7.0-202112161541.tar.gz'
-  sha256 '2f0c28dfec317a268ec44904420657181b43a7ba2a32f0bf788ea388dacb8552'
-  version '1.7.0'
+  url 'https://download.eclipse.org/jdtls/milestones/1.9.0/jdt-language-server-1.9.0-202203031534.tar.gz'
+  sha256 'b8af1925cb3b817fd1061e00a45ffbc6aca76819d8b2f5939626009ebf432fc7'
+  version '1.9.0'
 
   resource 'lombok' do
     url 'https://projectlombok.org/downloads/lombok.jar'
@@ -49,7 +49,7 @@ class Jdtls < Formula
         --add-opens java.base/java.lang=ALL-UNNAMED \
         -jar $JDTLS_LAUNCHER \
         -configuration $JDTLS_HOME/config_mac \
-        -data $HOME/.workspace$(pwd) \
+        -data $HOME/.local/workspace$(pwd) \
         $@
     SCRIPT
   end
