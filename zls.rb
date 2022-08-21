@@ -5,7 +5,7 @@ class Zls < Formula
   desc 'Zig LSP implementation + Zig Language Server'
   homepage 'https://github.com/zigtools/zls'
 
-  url 'https://github.com/zigtools/zls.git', using: :git, tag: '0.2.0'
+  url 'https://github.com/zigtools/zls.git', using: :git, tag: '0.9.0'
 
   depends_on 'zig'
   depends_on 'xz'
